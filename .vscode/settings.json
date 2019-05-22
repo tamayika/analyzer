@@ -1,0 +1,25 @@
+{
+    "go.useLanguageServer": true,
+    "go.alternateTools": {
+        "go-langserver": "gopls"
+    },
+    "go.languageServerExperimentalFeatures": {
+        "format": true,
+        "autoComplete": true,
+        "diagnostics": false,
+    },
+    "[go]": {
+        "editor.snippetSuggestions": "none",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        },
+    },
+    "gopls": {
+        "usePlaceholders": true,
+        "enhancedHover": true
+    },
+    "go.vetFlags": [
+        "--vettool=${workspaceRoot}/bin/mytool"
+    ]
+}
